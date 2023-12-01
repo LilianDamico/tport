@@ -1,12 +1,10 @@
 import React from 'react';
-import './Content.css';
+import {Container} from './Content'
 
 
 const Content: React.FC = () => {
   return (
-    <div>
-      <h1>Content</h1>      
-    </div>
+    <Container><h1>Content</h1></Container>
   )
 }
 

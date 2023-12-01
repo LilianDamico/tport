@@ -1,11 +1,11 @@
 import React from 'react';
-import './Mainheader.css';
+import {Container} from './Mainheader'
 
 const MainHeader: React.FC = () => {
   return (
-    <div>
-      <h1>MainHeader</h1>      
-    </div>
+    <Container>
+      <h1>Mainheader</h1>
+    </Container>
   )
 }
 

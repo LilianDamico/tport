@@ -1,12 +1,14 @@
 import React from 'react'
-import Layout from './components/layout/Layout';
+import GlobalStyles from './styles/GlobalStyles';
+import Layout from './components/layout/Index';
 
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
+      <GlobalStyles />
       <Layout />              
-    </div>
+    </>
   )
 }
 
