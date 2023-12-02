@@ -10,8 +10,9 @@ const Layout: React.FC = () => {
   return (
     <Container>
       <MainHeader />
+      <Content />
       <Aside />
-      <Content />     
+           
     </Container>
   )
 }
