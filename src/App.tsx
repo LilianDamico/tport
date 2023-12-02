@@ -2,11 +2,11 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 import Layout from './components/layout/Index';
-import light from './styles/themes/light';
+import dark from './styles/themes/dark';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={dark}>
       <GlobalStyles />
       <Layout />              
     </ThemeProvider>
