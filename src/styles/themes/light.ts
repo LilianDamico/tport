@@ -8,7 +8,7 @@ const light = {
 
         white: '#000',
         black: '#fff',
-        badwolf: '#7A6A4D',
+        badwolf: '#ACB7B6',
 
         success: '#7D88BB',
         info: '#F9B712',

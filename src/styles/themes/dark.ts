@@ -8,7 +8,7 @@ const dark = {
 
         white: '#EFF0E4',
         black: '#28292B',
-        badwolf: '#7A6A4D',
+        badwolf: '#314A64',
 
         success: '#7D88BB',
         info: '#F9B712',
