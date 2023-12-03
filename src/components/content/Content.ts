@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
 
         grid-area: CT;
-        background-color: ${props => props.theme.color.badwolf};
-
-
+        background-color: ${props => props.theme.color.secondary};
+        padding: 25px;
 `;
 
 

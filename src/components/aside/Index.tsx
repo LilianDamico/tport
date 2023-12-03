@@ -1,4 +1,5 @@
 import React from 'react';
+import {MdDashboard, MdArrowDownward, MdArrowUpward, MdMoving, MdExitToApp } from 'react-icons/md'
 import {
   Container, Header, LogImg,
   MenuContainer, MenuItemLink, Title
@@ -12,17 +13,16 @@ const Aside : React.FC = () => {
       <Header>
         <LogImg src={logoimg} alt="Logo" />
       </Header>
-
       <MenuContainer>
         <Title>
-          <h1>TPort - Administração Portuária</h1>
+          <h1>TPort  Administração Portuária</h1>
         </Title>
-        <MenuItemLink href="#">
-          
-        </MenuItemLink>
-
+        <MenuItemLink href="#"><MdDashboard />Dashboard</MenuItemLink>
+        <MenuItemLink href="#"><MdArrowUpward />Arrivals</MenuItemLink>
+        <MenuItemLink href="#"><MdArrowDownward />Departures</MenuItemLink>
+        <MenuItemLink href="#"><MdMoving />Movimentations</MenuItemLink>
+        <MenuItemLink href="#"><MdExitToApp />LogOut</MenuItemLink>
       </MenuContainer>
-
     </Container>
     
   );

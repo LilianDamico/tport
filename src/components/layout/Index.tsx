@@ -6,15 +6,18 @@ import Content from '../content/Index';
 
 
 
+
 const Layout: React.FC = () => {
   return (
     <Container>
       <MainHeader />
-      <Content />
       <Aside />
-           
+      <Content />
+        
+      
+     
     </Container>
-  )
+  );
 }
 
 export default Layout;

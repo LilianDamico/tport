@@ -8,7 +8,7 @@ export const Container = styled.div`
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
 `;
 
 export const Profile = styled.div`
