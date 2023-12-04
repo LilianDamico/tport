@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Tag } from './MovimentCard';
 
 interface IMovimentCardProps {
-    cardColor: string;
     tagColor: string;
     title: string;
     subtitle: string;
@@ -10,8 +9,7 @@ interface IMovimentCardProps {
 }
 
 
-const MovimentCard: React.FC<IMovimentCardProps> = ({
-    cardColor,
+const MovimentCard: React.FC<IMovimentCardProps> = ({    
     tagColor,
     title,
     subtitle,
@@ -20,7 +18,7 @@ const MovimentCard: React.FC<IMovimentCardProps> = ({
 
 }) => {
     return (
-        <Container color={cardColor}>
+        <Container>
             <Tag color={tagColor} />
             <div>
                 <span>{title}</span>

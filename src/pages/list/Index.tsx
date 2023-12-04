@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, Content } from './List';
+import { Container, Content, Filters } from './List';
 import ContentHeader from '../../components/contentheader/Index';
 import SelectInput from '../../components/selectinput/Index';
 import MovimentCard from '../../components/movimentcard/Index';
 
 const List: React.FC = () => {
   const options = [
-    { value: 'opcao1', label: 'Opção 1' },
-    { value: 'opcao2', label: 'Opção 2' },
+    { value: '7', label: 'julho' },
+    { value: '8', label: 'agosto' },
   ];
 
   const controllers = (
@@ -20,16 +20,34 @@ const List: React.FC = () => {
     <Container>
       <ContentHeader title="List" controllers={controllers}>
         <SelectInput options={options} />
+        <SelectInput options={options} />
       </ContentHeader>
+
+      <Filters>
+        <button className='tag-filter tag-filter-recurrent' type='button'>Recorrentes</button>
+        <button className='tag-filter tag-filter-eventual' type='button'>Eventuais</button>
+      </Filters>
+
       <Content>
         <MovimentCard
-          cardColor='#113C75'
           tagColor='#E44C4E'
           title='Conteiner'
           subtitle='Arrives'
           amount='1'
         />
-
+        <MovimentCard
+          tagColor='#E44C4E'
+          title='Conteiner'
+          subtitle='Arrives'
+          amount='1'
+        />
+        <MovimentCard
+          tagColor='#E44C4E'
+          title='Conteiner'
+          subtitle='Arrives'
+          amount='1'
+        />
+        
       </Content>
     </Container>
   
