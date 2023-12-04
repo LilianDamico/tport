@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const ToggleLabel = styled.span`
     color: ${props => props.theme.color.white};
-    font-size: 26px;
+    font-size: 20px;
 `;
 
 

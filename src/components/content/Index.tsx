@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Container } from './Content';
-import Dashboard from '../../pages/dashboard/Index';
 
 
+interface ContentProps {
+  children?: ReactNode; // Adicionando uma propriedade children opcional
+}
 
-const Content: React.FC = () => {
+const Content: React.FC<ContentProps> = ({ children }) => {
   return (
     <Container>
-      <Dashboard />      
+      
+      {children}
     </Container>
   );
 }
-
-
 
 export default Content;

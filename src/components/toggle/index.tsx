@@ -17,9 +17,9 @@ const Toggle : React.FC = () => {
             <ToggleSelector 
                 checked={isToggled}
                 onChange={handleToggle}
-                // Você pode adicionar mais props aqui para personalizar a aparência e o comportamento do switch
             />
             <ToggleLabel>Dark</ToggleLabel>
+            
         </Container>
     );
 }
