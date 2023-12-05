@@ -11,7 +11,7 @@ const List: React.FC = () => {
   const title = useMemo(() => {
     return type === 'arrives'
       ? { title: 'Arrives', lineColor: '#E44C4E' }
-      : { title: 'Departures', lineColor: '#<COR_DEPARTURES>' }; // Substitua <COR_DEPARTURES> pela cor desejada
+      : { title: 'Departures', lineColor: '#4B0042' }; 
   }, [type]);
 
   const months = [

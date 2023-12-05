@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useMemo} from 'react';
+import { useParams } from 'react-router-dom';
 import { Container } from './Dashboard'; 
 import ContentHeader from '../../components/contentheader/Index'; 
 import SelectInput from '../../components/selectinput/Index'; 
 
 const Dashboard: React.FC = () => {
-  const options = [
-    { value: 'opcao1', label: 'Opção 1' },
-    { value: 'opcao2', label: 'Opção 2' },
+    const { type } = useParams(); // Usando o hook useParams para obter o parâmetro da rota
+
+  const title = useMemo(() => {
+    return type === 'arrives'
+      ? { title: 'Arrives', lineColor: '#E44C4E' }
+      : { title: 'Departures', lineColor: '#4B0042' }; 
+  }, [type]);
+
+
+
+
+    const months = [
+    { value: '7', label: 'julho' },
+    { value: '8', label: 'agosto' },
   ];
+
+  const years = [
+    { value: '2023', label: 'dezembro' },
+    { value: '2024', label: 'janeiro' },
+  ];
+
 
   return (
     <Container>
-      <ContentHeader title="Dashboard" lineColor="#123456" controllers={<SelectInput options={options} />} />
-      <h1>Dashboard</h1>
+      <ContentHeader title={title.title} lineColor={title.lineColor}>
+        <SelectInput options={months} />
+        <SelectInput options={years} />
+      </ContentHeader>
+      
     </Container>
   );
 }

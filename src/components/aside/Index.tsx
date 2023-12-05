@@ -21,7 +21,7 @@ const Aside : React.FC = () => {
         <MenuItemLink href="/list/arrivals"><MdArrowUpward />Arrivals</MenuItemLink>
         <MenuItemLink href="/list/departures"><MdArrowDownward />Departures</MenuItemLink>
         <MenuItemLink href="/list/movimentations"><MdMoving />Movimentations</MenuItemLink>
-        <MenuItemLink href="/login"><MdExitToApp />LogIn</MenuItemLink>
+        <MenuItemLink href="/loginpage"><MdExitToApp />LoginPage</MenuItemLink>
       </MenuContainer>
     </Container>
     
