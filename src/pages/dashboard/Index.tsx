@@ -11,8 +11,8 @@ const Dashboard: React.FC = () => {
 
   return (
     <Container>
-      <ContentHeader title="Dashboard" controllers={<SelectInput options={options} />} />
-      {/* Restante do conteúdo da página */}
+      <ContentHeader title="Dashboard" lineColor="#123456" controllers={<SelectInput options={options} />} />
+      <h1>Dashboard</h1>
     </Container>
   );
 }

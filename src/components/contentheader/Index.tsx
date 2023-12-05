@@ -1,26 +1,21 @@
 import React from 'react';
-import { Container, Title, Controller } from './ContentHeader';
+import { Container } from './ContentHeader';
 
 interface IContentHeaderProps {
   title: string;
-  controllers: React.ReactNode;
-  children?: React.ReactNode; // Adicione esta linha se desejar suportar a propriedade children
+  lineColor: string;
+  controllers?: React.ReactNode; // Adicionando a propriedade controllers à interface
+  children?: React.ReactNode;
 }
 
-const ContentHeader: React.FC<IContentHeaderProps> = ({
-  title, controllers, children
-}) => {
+const ContentHeader: React.FC<IContentHeaderProps> = ({ title, lineColor, controllers, children }) => {
   return (
-    <Container>
-      <Title>
-        <h2>{ title }</h2>
-      </Title>
-      <Controller>
-        { controllers }
-      </Controller>
-      { children } {/* Adicione esta linha se desejar suportar a propriedade children */}
+    <Container lineColor={lineColor}>
+      <h1>{title}</h1>
+      {controllers && <div>{controllers}</div>}
+      {children && <div>{children}</div>}
     </Container>
   );
-}
+};
 
 export default ContentHeader;

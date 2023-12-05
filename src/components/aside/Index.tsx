@@ -17,11 +17,11 @@ const Aside : React.FC = () => {
         <Title>
           <h1>TPort  Administração Portuária</h1>
         </Title>
-        <MenuItemLink href="#"><MdDashboard />Dashboard</MenuItemLink>
-        <MenuItemLink href="#"><MdArrowUpward />Arrivals</MenuItemLink>
-        <MenuItemLink href="#"><MdArrowDownward />Departures</MenuItemLink>
-        <MenuItemLink href="#"><MdMoving />Movimentations</MenuItemLink>
-        <MenuItemLink href="#"><MdExitToApp />LogOut</MenuItemLink>
+        <MenuItemLink href="/dashboard"><MdDashboard />Dashboard</MenuItemLink>
+        <MenuItemLink href="/list/arrivals"><MdArrowUpward />Arrivals</MenuItemLink>
+        <MenuItemLink href="/list/departures"><MdArrowDownward />Departures</MenuItemLink>
+        <MenuItemLink href="/list/movimentations"><MdMoving />Movimentations</MenuItemLink>
+        <MenuItemLink href="/login"><MdExitToApp />LogIn</MenuItemLink>
       </MenuContainer>
     </Container>
     
